@@ -1,0 +1,215 @@
+.wrapper {
+    width: 100%;
+
+    .register {
+        margin: auto;
+        border: 1px solid gray;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-between;
+        height: 500px;
+        position: relative;
+        overflow: hidden;
+
+        &::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB7hvtzeiLIKiMusvbMA0lxp8PCMj2q_8W5UvXhGNz68z_xz1YY7_sbDlbsGUNbVw2YE-k3sf48E2LRIPkSQwud7x5Zfb3QgJn4HJOyQzFLFTu-zFkcqhslwZz8QkcyJPjZobV-5hsGWztoSrlvyISK3qx_L0X_rp7_x8WUzbznhDIeDCpbD4IuYYEZo2-3WRFfHacVRXG7ZcxLQ2GBNsAz6MbnvRWK38HIygmlYzGHEiRqWzVeSIhtztmNuoM2fHR1PXWDjQzUlVo");
+            background-size: cover;
+            background-position: center;
+            filter: blur(6px) brightness(0.6);
+            transform: scale(1.1);
+            z-index: 0;
+        }
+
+        >* {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+.introduction {
+    width: 50%;
+    color: rgb(215, 215, 215);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .introduction-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20%;
+        margin-left: 20px;
+        margin-top: 10px;
+        width: 80%;
+        color: gray;
+
+        p:first-child {
+            color: rgb(146, 146, 203);
+            font-weight: bold;
+            font-size: 25px;
+        }
+    }
+
+    .introduction-msg {
+        margin-top: 10px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        height: 25%;
+        color: gray;
+        margin-left: 8%;
+
+        .introduction-msg-1,
+        .introduction-msg-2 {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            width: 85%;
+            border-radius: 5px;
+            padding: 5px 0px;
+            justify-content: center;
+
+            .msg-icon {
+                color: rgb(146, 146, 203);
+                font-size: 20px;
+                border: 1px solid rgb(146, 146, 203);
+                border-radius: 100%;
+                padding: 10px;
+                margin-right: 8px;
+            }
+
+            div>p:first-child {
+                color: black;
+                font-weight: 700;
+                font-size: 20px;
+
+            }
+        }
+
+        .introduction-msg-2 {
+            margin-left: 20px;
+        }
+    }
+
+    .introduction-footer {
+        text-align: center;
+    }
+}
+
+.register-form {
+    background-color: white;
+    color: rgb(78, 78, 78);
+    width: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        width: 90%;
+        margin: auto;
+    }
+
+    .register-title {
+        p:first-child {
+            color: black;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        p {
+            text-align: center;
+        }
+
+    }
+
+    .register-main-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 80%;
+
+        .register-infomation {
+            margin-top: 10px;
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        input {
+            width: 90%;
+            border: none;
+            border: 1px solid rgb(78, 78, 78);
+            border-radius: 5px;
+            height: 30px;
+            padding-left: 5px;
+        }
+
+        .policy-accept {
+            display: flex;
+
+            input {
+                height: 20px;
+                width: 20px;
+                margin-right: 10px;
+            }
+
+            font-size: 12px;
+        }
+
+        .register-btn {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+
+            button {
+                height: 40px;
+                width: 90%;
+                border-radius: 5px;
+                background-color: blue;
+                color: white;
+                font-weight: 700;
+            }
+        }
+
+        .account-exist {
+            p {
+                text-align: center;
+            }
+        }
+    }
+
+    .register-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 40%;
+    }
+}
+
+
+@media (min-width: 920px) {
+    .register {
+        width: 70%;
+    }
+}
+
+@media (max-width: 920px) {
+    .register {
+        width: 90%;
+    }
+}
+
+@media (min-width: 1300px) {
+    .register {
+        width: 50%;
+    }
+}

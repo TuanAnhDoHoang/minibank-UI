@@ -1,0 +1,28 @@
+.Header{
+    border: 1px solid rgb(225, 223, 223);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 60px;
+    box-shadow: 2px 2px 10px rgb(211, 210, 210);
+    align-items: center;
+    p:hover{
+        cursor: pointer;
+    }
+}
+/* responsive */
+.VietBank{
+    color: rgb(0, 0, 166);
+    font-weight: bold;
+    font-size: 25px;
+}
+.QuestionMark{
+    color: gray;
+    border: 2px solid gray;
+    padding: 2px 7px;
+    border-radius: 100%;
+    font-weight: bold;
+
+    &:hover{
+        background-color: rgb(235, 233, 233);
+    }
+}

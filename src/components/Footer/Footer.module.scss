@@ -1,0 +1,23 @@
+
+.Footer, .left-side, .right-side{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer{
+    border-top: 1px solid rgb(179, 179, 179);
+    padding: 20px 60px;
+    color: rgb(61, 61, 61);
+}
+
+.left-side, .right-side{
+    p{
+        padding: 0px 5px;
+    }
+}
+.left-side{
+    p:first-child{
+        color: rgb(0, 0, 166);
+        font-weight: bold;
+    }
+}

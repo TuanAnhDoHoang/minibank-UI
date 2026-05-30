@@ -1,0 +1,97 @@
+.Login, .login-form, .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.Login{
+    color: rgb(75, 75, 75);
+    margin: auto;
+    width: 350px;
+    height: 480px;
+}
+.login-form{
+    height: 95%;
+    /* border: 1px solid rgb(222, 222, 222); */
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    box-shadow: 2px 2px 5px 0.5px gray;
+    .title{
+        p:first-child{
+            color: black;
+            font-size: 25px;
+            font-weight: 800;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 15%;
+        margin-bottom: 15px;
+    }
+    .info-form{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 35%;
+        width: 100%;
+        input{
+            margin-top: 10px;
+            width: 100%;
+            height: 40px;
+            border-radius: 5px;
+            padding-left: 10%;
+            border: none; /*reset*/
+            border: 1px solid gray;
+        }
+    }
+    .forget-password{
+        color: rgb(0, 0, 166);
+        width: 100%;
+        justify-items: end;
+        padding-right: 2px;
+    }
+    .login-btn{
+        :hover{
+            cursor: pointer;
+        }
+        width: 100%;
+        height: 50px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        button{
+            font-size: 15px;
+            font-weight: bold;
+            color: white;
+            width: 100%;
+            height: 100%;
+            background-color: rgb(69, 69, 248);
+            border-radius: 5px;
+        }
+    }
+    .register-suggest{
+        border-top: 1px solid gray;
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        width: 90%;
+        justify-content: center;
+        margin-top: 20px;
+        p:nth-child(2){
+            margin-left:5px;
+            color:blue;
+            font-weight: bold;
+        }
+    }
+}
+.security-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    padding: 2px 5%;
+}
